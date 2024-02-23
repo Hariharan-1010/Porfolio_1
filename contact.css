@@ -1,0 +1,68 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+a:hover {
+    color: #ffffff;
+}
+svg {
+    position: relative;
+    top: 2px;
+}
+p{
+    margin: 3px;
+}
+.phone {
+    grid-area: 1 / 2 / 2 / 4;
+}
+.mail {
+    grid-area: 2 / 2 / 3/ 4;
+}
+.github {
+    grid-area: 3 / 2 / 4 / 4;
+}
+.linkedin {
+    grid-area: 4 / 2 / 5 / 4;
+}
+.redirect {
+    grid-area: 5 / 1 / 6 / -1;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (width <=620px) {
+    p, a {
+        font-size: 20px;
+    }
+} 
+@media (width <=450px) {
+    a, p {
+        font-size: 20px;
+    }
+}                                                  
